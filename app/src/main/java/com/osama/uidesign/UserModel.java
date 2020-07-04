@@ -1,7 +1,24 @@
 package com.osama.uidesign;
 
 public class UserModel {
-    String name,message;
+    String name;
+    String message;
+
+    public int getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(int imagePath) {
+        this.imagePath = imagePath;
+    }
+
+    int imagePath;
+
+    public UserModel(String name, String message, int imagePath) {
+        this.name = name;
+        this.message = message;
+        this.imagePath = imagePath;
+    }
 
     public UserModel(String name, String message) {
         this.name = name;
